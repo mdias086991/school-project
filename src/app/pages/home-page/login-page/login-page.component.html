@@ -1,0 +1,23 @@
+<div class="content-home__text">
+  <h2>{{applicationName}}</h2>
+  <h5>{{applicationDescription}}</h5>
+</div>
+<div class="form-login">
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">
+      <i-bs name="person-fill" width="20" height="20"></i-bs>
+    </span>
+    <input type="text" class="form-control" placeholder="CPF" aria-label="CPF" #user aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon2">
+      <i-bs name="lock" width="20" height="20"></i-bs>
+    </span>
+    <input type="password" class="form-control" placeholder="Password" aria-label="password" #password aria-describedby="basic-addon2">
+  </div>
+
+  <button class="btn btn-primary" (click)="accessDashboard(user.value, password.value)">Acessar</button>
+
+</div>

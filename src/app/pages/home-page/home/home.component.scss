@@ -1,0 +1,21 @@
+@import '../../../core-styles/variables.scss';
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color;
+  color: $font-color-primary;
+  font-family: $family-primary;
+}
+
+.content-home__text h2 {
+  margin-top: 20px;
+  font-size:60px;
+}
+
+.content-home__text h5 {
+  font-size:30px;
+  text-align: center;
+}

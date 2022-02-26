@@ -1,0 +1,14 @@
+<div class="home">
+  <div class="content-home" *ngIf="!authPage; else loginPage" >
+    <img src="assets/icons/abacus-svgrepo-com.svg" alt="">
+    <div class="content-home__text">
+      <h2>{{applicationName}}</h2>
+      <h5 (click)="goToLoginPage()">Clique para acessar</h5>
+    </div>
+  </div>
+
+
+  <ng-template #loginPage>
+    <app-login-page></app-login-page>
+  </ng-template>
+</div>

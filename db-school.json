@@ -1,0 +1,37 @@
+{
+  "Users" : [
+    {
+      "Id" : "1",
+      "Name" : "Matheus Dias",
+      "CPF" : "860.146.395-94",
+      "Phone" : "71992252762",
+      "Password" : "minhaSenha123"
+    }
+  ],
+  "Schools" : [
+    {
+      "Id" : "1",
+      "Name" : "ESCOLA CASA DA CRIANÇA DO BOM JUÁ",
+      "CNPJ" : "19712540000126",
+      "Address" : "R. 12 de Setembro, S/N - Fazenda Grande do Retiro",
+      "AvailableClasses" : [
+        {
+          "series": "5° Série",
+          "AvailableVacancies": "30"
+        },
+        {
+          "series": "6° Série",
+          "AvailableVacancies": "30"
+        },
+        {
+          "series": "7° Série",
+          "AvailableVacancies": "30"
+        },
+        {
+          "series": "8° Série",
+          "AvailableVacancies": "30"
+        }
+      ]
+    }
+  ]
+}
