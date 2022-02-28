@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { SchoolsService } from 'src/app/shared/utils/services/schools.service';
 
 import { DashboardSchoolsListComponent } from './dashboard-schools-list.component';
 
@@ -8,7 +10,11 @@ describe('DashboardSchoolsListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashboardSchoolsListComponent ]
+      declarations: [ DashboardSchoolsListComponent ],
+      providers: [
+        SchoolsService,
+        HttpClient
+      ]
     })
     .compileComponents();
   });
