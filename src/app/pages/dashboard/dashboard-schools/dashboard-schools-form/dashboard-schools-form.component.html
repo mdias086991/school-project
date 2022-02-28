@@ -1,1 +1,67 @@
-<p>dashboard-schools-form works!</p>
+<app-header-dashboard></app-header-dashboard>
+
+<div class="form-school">
+  <app-title-page [titlePage]="!idSchool ? 'Cadastro de nova Escola' : editSchoolText" [backButton]="true"></app-title-page>
+  <form class="form-new-school row g-3">
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4">
+      <label class="form-label">Nome da Escola</label>
+      <input type="text" [(ngModel)]="school.name" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="schoolName" aria-describedby="school-name" required>
+    </div>
+
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4">
+      <label class="form-label">CNPJ</label>
+      <input type="text" [(ngModel)]="school.cnpj" [ngModelOptions]="{standalone: true}" class="form-control" id="basic-url" aria-describedby="cnpj" required>
+    </div>
+
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4">
+      <label for="director" class="form-label">Diretor</label>
+      <input type="text" [(ngModel)]="school.diretor" [ngModelOptions]="{standalone: true}" class="form-control" id="basic-url" aria-describedby="director" required>
+    </div>
+
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4">
+      <label for="director" class="form-label">Telefone para contato</label>
+      <input type="text" [(ngModel)]="school.telefone" [ngModelOptions]="{standalone: true}" class="form-control" id="basic-url" aria-describedby="director" required>
+    </div>
+
+    <h3>Endereço</h3>
+    <hr>
+
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4" >
+      <label for="cep">CEP</label>
+      <input type="number" [(ngModel)]="school.cep" [ngModelOptions]="{standalone: true}" class="form-control" (ngModelChange)="checkCep(school.cep)" aria-label="cep" required>
+    </div>
+
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4">
+      <label for="">Logradouro</label>
+      <input type="text" disabled [(ngModel)]="school.logradouro" [ngModelOptions]="{standalone: true}" [ngModelOptions]="{standalone: true}" aria-label class="form-control" aria-label="Logradouro">
+    </div>
+
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4">
+      <label for="">Complemento</label>
+      <input type="text" disabled [(ngModel)]="school.complemento" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Complemento">
+    </div>
+
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4">
+      <label for="">Bairro</label>
+      <input type="text" disabled [(ngModel)]="school.bairro" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Bairro">
+    </div>
+
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4">
+      <label for="">Localidade</label>
+      <input type="text" disabled [(ngModel)]="school.localidade" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Localidade">
+    </div>
+
+    <div class="mb-3 input-schoolProject col-sm-12 col-md-6 col-lg-4">
+      <label for="">UF</label>
+      <input type="text" disabled [(ngModel)]="school.uf" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="UF">
+    </div>
+
+    <h3>Turmas disponiveis</h3>
+    <hr>
+    <app-available-classes [arraySchoolClass]="school.turmas || []" (addNewSchoolClass)="addNewSchoolClass($event)"></app-available-classes>
+    <div class="actions-button">
+      <button type="submit" class="btn btn-success" (click)="idSchool ? updateSchool() : saveSchool()">{{idSchool ? "Atualizar" : "Salvar"}}</button>
+      <button type="submit" class="btn btn-secondary" (click)="cancel()">Cancelar</button>
+    </div>
+  </form>
+</div>

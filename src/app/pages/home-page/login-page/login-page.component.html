@@ -18,6 +18,9 @@
     <input type="password" class="form-control" placeholder="Password" aria-label="password" #password aria-describedby="basic-addon2">
   </div>
 
-  <button class="btn btn-primary" (click)="accessDashboard(user.value, password.value)">Acessar</button>
+  <div class="access-button">
+    <button class="btn btn-primary" (click)="accessDashboard(user.value, password.value)">Acessar</button>
+  </div>
+
 
 </div>

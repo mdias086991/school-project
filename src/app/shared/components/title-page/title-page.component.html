@@ -1,0 +1,9 @@
+<div class="page-title-components">
+  <h5 class="title">{{titlePage}}</h5>
+  <button class="btn btn-success" *ngIf="isNewItem">
+    <i-bs  name="plus-lg" width="15" height="15" (click)="goToNewPage()"></i-bs>
+  </button>
+  <button class="btn btn-secondary" *ngIf="backButton">
+    <i-bs  name="backspace" width="15" height="15" (click)="toBack()"></i-bs>
+  </button>
+</div>

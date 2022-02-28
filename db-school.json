@@ -1,37 +1,48 @@
 {
-  "Users" : [
+  "Users": [
     {
-      "Id" : "1",
-      "Name" : "Matheus Dias",
-      "CPF" : "860.146.395-94",
-      "Phone" : "71992252762",
-      "Password" : "minhaSenha123"
+      "id": "1",
+      "Name": "Matheus Dias",
+      "CPF": "860.146.395-94",
+      "Phone": "71992252762",
+      "Password": "minhaSenha123"
     }
   ],
-  "Schools" : [
+  "Schools": [
     {
-      "Id" : "1",
-      "Name" : "ESCOLA CASA DA CRIANÇA DO BOM JUÁ",
-      "CNPJ" : "19712540000126",
-      "Address" : "R. 12 de Setembro, S/N - Fazenda Grande do Retiro",
-      "AvailableClasses" : [
+      "name": "Manuel Dias Souza",
+      "bairro": "Aracuí",
+      "cnpj": "4242424242",
+      "diretor": "Marcio Andrade",
+      "cep": 42702010,
+      "telefone": "71992252762",
+      "localidade": "Lauro de Freitas",
+      "complemento": "",
+      "logradouro": "Avenida Brigadeiro Alberto Costa Matos",
+      "uf": "BA",
+      "turmas": [
         {
-          "series": "5° Série",
-          "AvailableVacancies": "30"
+          "serie": "2° Ano",
+          "vagasDisponiveis": "25"
         },
         {
-          "series": "6° Série",
-          "AvailableVacancies": "30"
-        },
-        {
-          "series": "7° Série",
-          "AvailableVacancies": "30"
-        },
-        {
-          "series": "8° Série",
-          "AvailableVacancies": "30"
+          "serie": "3° ano",
+          "vagasDisponiveis": "25"
         }
-      ]
+      ],
+      "id": 1
+    },
+    {
+      "name": "Manuel Dias",
+      "bairro": "Catu de Abrantes (Abrantes)",
+      "cnpj": "16084331000197",
+      "diretor": "Marcio Andrade",
+      "cep": 42825903,
+      "localidade": "Camaçari",
+      "complemento": "Estrada do Côco, Km 8,5",
+      "logradouro": "Rodovia BA-099",
+      "uf": "BA",
+      "id": 2
     }
   ]
 }

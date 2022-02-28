@@ -1,0 +1,37 @@
+@import '../../../core-styles/variables.scss';
+
+
+
+.header-dashboard {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00B2FF;
+  color: #FFFFFF;
+  padding: 12px;
+  align-items: center;
+  font-family: $family-primary;
+}
+
+.header-dashboard h5{
+  font-size: 25px;
+}
+
+.loggedUser {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #FE5B00;
+  color: white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-items {
+  font-family: Arial, Helvetica, sans-serif;
+}

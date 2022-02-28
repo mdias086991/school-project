@@ -1,1 +1,15 @@
-<p>dashboard-schools-list works!</p>
+
+<div class="content">
+  <app-title-page [titlePage]="'Escolas cadastradas'" [isNewItem]="true"></app-title-page>
+  <div class="table-box">
+    <app-table
+      (deleteMethod)="deleteSchool($event)"
+      (editMethod)="editSchool($event)"
+      [items]="school"
+      [page]="1"
+      [pageSize]="5"
+      [collectionSize]="school.length"
+      [noContentText]="'Nenhuma escola cadastrada'"
+    ></app-table>
+  </div>
+</div>

@@ -10,5 +10,10 @@
 }
 
 .form-login {
-  font-family: $family-secondary;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.access-button {
+  display:flex;
+  justify-content: center;
 }
