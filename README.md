@@ -22,7 +22,7 @@
 ```
 $ git clone https://github.com/mdias086991/school-project.git
 ```
-<p>Vá até a pasta do projeto e instale as dependencias</p>
+<p>Vá até a pasta do projeto e realize a instalação das dependencias</p>
 ```
 $ cd schoolProject
 $ npm install ou yarn install
